@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="straslerj.TipCalculatorController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <VBox prefHeight="400.0" prefWidth="200.0">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="161.0">
+               <children>
+                  <Label text="Bill total:" translateX="1.0" translateY="4.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="totalTextField" prefHeight="27.0" prefWidth="71.0" translateX="8.0" translateY="4.0" />
+               </children></HBox>
+            <HBox prefHeight="24.0" prefWidth="161.0">
+               <children>
+                  <Label text="Tip amount" translateX="40.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children></HBox>
+            <HBox prefHeight="40.0" prefWidth="161.0">
+               <children>
+                  <Button fx:id="fifButton" mnemonicParsing="false" onAction="#setTotalCalculatedFifteen" text="15%" translateX="60.0" />
+               </children></HBox>
+            <HBox prefHeight="40.0" prefWidth="161.0">
+               <children>
+                  <Button fx:id="twenButton" mnemonicParsing="false" onAction="#setTotalCalculatedTwenty" text="20%" translateX="59.0" />
+               </children></HBox>
+            <HBox prefHeight="40.0" prefWidth="161.0">
+               <children>
+                  <Button fx:id="twenfiveButton" mnemonicParsing="false" onAction="#setTotalCalculatedTwentyfive" text="25%" translateX="59.0" />
+               </children></HBox>
+            <HBox layoutX="10.0" layoutY="170.0" prefHeight="40.0" prefWidth="161.0">
+               <children>
+                  <Label text="Tip:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tipCalculated" translateX="5.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="216.0" prefHeight="40.0" prefWidth="161.0">
+               <children>
+                  <Label text="Total with tip:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalCalculated" translateX="5.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="160.0" prefHeight="40.0" prefWidth="161.0">
+               <children>
+                  <Button fx:id="roundUpButton" mnemonicParsing="false" onAction="#roundUp" prefHeight="27.0" prefWidth="71.0" text="Round up" translateX="1.0" />
+                  <Button fx:id="roundDownButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#roundDown" prefHeight="27.0" prefWidth="87.0" text="Round down" translateX="2.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="171.0" prefHeight="40.0" prefWidth="161.0">
+               <children>
+                  <Label text="New tip:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="newTipCalculated" prefHeight="19.0" prefWidth="134.0" translateX="5.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="231.0" prefHeight="40.0" prefWidth="161.0">
+               <children>
+                  <Label text="New total:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="newTotalCalculated" translateX="5.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
