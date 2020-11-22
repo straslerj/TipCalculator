@@ -71,6 +71,8 @@ public class TipCalculatorController {
         getTotal();
         tipCalculated.setText(String.valueOf(n.format(total * FIFTEEN_PERCENT_TIP)));
         totalCalculated.setText(String.valueOf(n.format(total + (total * FIFTEEN_PERCENT_TIP))));
+        newTipCalculated.setText("");
+        newTotalCalculated.setText("");
     }
 
     /**
@@ -80,6 +82,8 @@ public class TipCalculatorController {
         getTotal();
         tipCalculated.setText(String.valueOf(n.format(total * TWENTY_PERCENT_TIP)));
         totalCalculated.setText(String.valueOf(n.format(total + (total * TWENTY_PERCENT_TIP))));
+        newTipCalculated.setText("");
+        newTotalCalculated.setText("");
     }
 
     /**
@@ -89,6 +93,8 @@ public class TipCalculatorController {
         getTotal();
         tipCalculated.setText(String.valueOf(n.format(total * TWENTYFIVE_PERCENT_TIP)));
         totalCalculated.setText(String.valueOf(n.format(total + (total * TWENTYFIVE_PERCENT_TIP))));
+        newTipCalculated.setText("");
+        newTotalCalculated.setText("");
     }
 
     /**
